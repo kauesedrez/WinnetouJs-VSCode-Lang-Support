@@ -1,0 +1,19 @@
+{
+    "name": "winnetoujs-lang-support",
+    "displayName": "WinnetouJS Lang Support",
+    "description": "Suport to WinnetouJs HTML Construtos",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [{            
+            "scopeName": "source.winnetou",
+            "path": "./syntaxes/winnetou-construtos.tmLanguage.json",
+            "injectTo": ["text.html","source.js"]
+        }]
+    }
+}

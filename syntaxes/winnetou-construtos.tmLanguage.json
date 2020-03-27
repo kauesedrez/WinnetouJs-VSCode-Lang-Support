@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"injectionSelector": "L:text.html.derivative",
+	"patterns": [
+		{
+			"include": "#expression"
+		}
+	],
+	"repository": {
+		"expression":{
+			"patterns": [
+				{
+					"include": "#keys-pattern"
+				},
+				{
+					"include":"#brackets-pattern"
+				}
+			]
+		},
+		"keys-pattern": {
+			"match": "{{(.*?)}}",
+			"name": "keyword.control"
+		},
+		"brackets-pattern": {
+			"match": "\\[\\[(.*?)\\]\\]",
+			"name": "constant.numeric"
+		}
+	},
+	"scopeName": "source.winnetou"
+}
