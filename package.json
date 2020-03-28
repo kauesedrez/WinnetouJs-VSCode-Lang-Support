@@ -10,10 +10,21 @@
         "Programming Languages"
     ],
     "contributes": {
-        "grammars": [{            
-            "scopeName": "source.winnetou",
-            "path": "./syntaxes/winnetou-construtos.tmLanguage.json",
-            "injectTo": ["text.html","source.js"]
-        }]
+        "grammars": [
+            {
+                "scopeName": "source.winnetou",
+                "path": "./syntaxes/winnetou-construtos.tmLanguage.json",
+                "injectTo": [
+                    "text.html",
+                    "source.js"
+                ]
+            }
+        ],
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./winnetouSnippets.json"
+            }
+        ]
     }
 }
